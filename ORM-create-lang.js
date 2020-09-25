@@ -10,13 +10,15 @@ const sequelize = new Sequelize(path, {
 
 let Lang = sequelize.define('langs', {
     code: Sequelize.STRING,
-    name: Sequelize.STRING
+    name: Sequelize.STRING,
+    desc: Sequelize.STRING
 });
 
 let langs = [
     {
         "code": "fi",
         "name": "Finnish",
+        "desc": "Finnish ISO language"
     },
     {
         "code": "se",
